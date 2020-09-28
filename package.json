@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/dosenhub/absenisasiV2#readme",
   "dependencies": {
+    "lowdb": "^1.0.0",
     "puppeteer": "^5.3.1"
   }
 }
