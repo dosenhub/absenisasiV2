@@ -1,0 +1,28 @@
+{
+  "name": "absenisasiv2",
+  "version": "1.0.0",
+  "description": "Bot Absen Dosen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosenhub/absenisasiV2.git"
+  },
+  "keywords": [
+    "bot",
+    "absen",
+    "puppeteer"
+  ],
+  "author": "putraprima@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dosenhub/absenisasiV2/issues"
+  },
+  "homepage": "https://github.com/dosenhub/absenisasiV2#readme",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "puppeteer": "^5.3.1"
+  }
+}
