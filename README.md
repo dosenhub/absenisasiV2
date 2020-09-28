@@ -5,4 +5,4 @@ Bot Absen !!! thats it
 ## Cara Install
 
 - Npm Install
-  - Kalo mau pake firefox "PUPPETEER_PRODUCT=firefox npm i puppeteer"
+  - Kalo mau pake firefox "PUPPETEER_PRODUCT=firefox npm i -s puppeteer"

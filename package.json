@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dosenhub/absenisasiV2/issues"
   },
-  "homepage": "https://github.com/dosenhub/absenisasiV2#readme"
+  "homepage": "https://github.com/dosenhub/absenisasiV2#readme",
+  "dependencies": {
+    "puppeteer": "^5.3.1"
+  }
 }
