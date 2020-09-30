@@ -25,7 +25,7 @@ const portal = {
         ],
       });
 
-      portal.page = await travian.browser.newPage();
+      portal.page = await portal.browser.newPage();
 
       await portal.page.goto(BASE_URL, { waitUntil: "networkidle2" });
     } catch (error) {
