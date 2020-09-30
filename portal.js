@@ -34,5 +34,14 @@ const portal = {
       await portal.browser.close();
     }
   },
+  login: async () => {},
+  cekSurvey: async () => {},
+  isiSurvey: async () => {},
+  cekAbsensiAvailable: async () => {},
+  clickDataKehadiran: async () => {},
+  clickPresensiOnline: async () => {},
+  cekButtonAbsen: async () => {},
+  clickAbsen: async () => {},
+  takeScreenShot: async () => {},
 };
 module.exports = portal;
