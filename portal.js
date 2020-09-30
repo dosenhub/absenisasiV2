@@ -1,10 +1,6 @@
 const puppeteer = require("puppeteer");
 const BASE_URL = "https://portal.polinema.ac.id";
 const moment = require("moment");
-const low = require("lowdb");
-const FileSync = require("lowdb/adapters/FileSync");
-const adapter = new FileSync("db.json");
-const db = low(adapter);
 
 const portal = {
   browser: null,
