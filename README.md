@@ -6,3 +6,5 @@ Bot Absen !!! thats it
 
 - Npm Install
   - Kalo mau pake firefox "PUPPETEER_PRODUCT=firefox npm i -s puppeteer"
+
+## Setup Windows
