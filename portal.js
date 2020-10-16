@@ -5,7 +5,9 @@ const moment = require("moment");
 const portal = {
   browser: null,
   page: null,
+  // konfigurasi min delay
   maxDelay: 5000,
+  // konfigurasi max delay
   minDelay: 3000,
   init: async () => {
     try {
