@@ -8,6 +8,11 @@ Bot Absen !!! thats it
   - Kalo mau pake firefox "PUPPETEER_PRODUCT=firefox npm i -s puppeteer"
 
 ## Setup Windows
+
+## Setup Mac
+
+## Setup Linux
+
 ## Contoh Db
 {
   "users": [
