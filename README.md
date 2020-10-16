@@ -8,3 +8,11 @@ Bot Absen !!! thats it
   - Kalo mau pake firefox "PUPPETEER_PRODUCT=firefox npm i -s puppeteer"
 
 ## Setup Windows
+## Contoh Db
+{
+  "users": [
+    { "username": "your username here", "password": "your password here" },
+    { "username": "your username here", "password": "your password here" },
+    { "username": "your username here", "password": "your password here" }
+  ]
+}
