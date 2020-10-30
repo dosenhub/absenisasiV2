@@ -14,6 +14,8 @@ Bot Absen !!! thats it
 ## Setup Linux
 
 ## Contoh Db
+
+```json
 {
   "users": [
     { "username": "your username here", "password": "your password here" },
@@ -21,11 +23,12 @@ Bot Absen !!! thats it
     { "username": "your username here", "password": "your password here" }
   ]
 }
+```
 
 ## Contoh .env
 
+```
 HEADLESS=false
 MAX=240000
 MIN=60000
-
-
+```
