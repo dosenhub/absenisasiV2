@@ -106,7 +106,8 @@ const portal = {
       );
       if (buttonAbsen != undefined) {
         console.log("Click Button");
-        // await buttonAbsen.click();
+        await buttonAbsen.click();
+        await portal.page.waitForTimeout(9000);
       } else {
         console.log("Ga Di Klik Button");
       }
