@@ -115,6 +115,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# ingore database
+# Ignore database and environment
 /db.json
 /.env
