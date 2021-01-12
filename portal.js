@@ -14,8 +14,8 @@ const portal = {
     try {
       console.log("Browser Start");
       portal.browser = await puppeteer.launch({
-        product: "firefox",
-        headless: false,
+        product: process.env.PUPPETEER_PRODUCT | "chrome",
+        headless: process.env.HEADLESS | false,
         defaultViewport: null,
         args: [
           "--no-sandbox",
