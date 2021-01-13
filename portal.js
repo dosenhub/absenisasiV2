@@ -2,6 +2,7 @@ const puppeteer = require("puppeteer");
 const fs = require("fs-extra");
 const BASE_URL = "https://portal.polinema.ac.id";
 const moment = require("moment");
+const yn = require("yn");
 
 const portal = {
   browser: null,
@@ -15,7 +16,7 @@ const portal = {
       console.log("Browser Start");
       portal.browser = await puppeteer.launch({
         product: process.env.PUPPETEER_PRODUCT || "chrome",
-        headless: true,
+        headless: yn(process.env.HEADLESS),
         defaultViewport: null,
         args: [
           "--no-sandbox",
