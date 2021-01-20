@@ -3,14 +3,15 @@ const fs = require("fs-extra");
 const BASE_URL = "https://portal.polinema.ac.id";
 const moment = require("moment");
 const yn = require("yn");
+const { max } = require("moment");
 
 const portal = {
   browser: null,
   page: null,
   // konfigurasi min delay
-  maxDelay: 5000,
+  maxDelay: process.env.MAX || 5000,
   // konfigurasi max delay
-  minDelay: 3000,
+  minDelay: process.env.MIN || 3000,
   init: async () => {
     try {
       console.log("Browser Start");
@@ -149,6 +150,19 @@ const portal = {
     } catch (error) {
       console.log("Gagal Logout");
       console.log(error.stack);
+    }
+  },
+  addDelay: async () => {
+    try {
+      let random = Math.random();
+      let delay = Math.floor(
+        random * (Math.ceil(portal.maxDelay) - Math.ceil(portal.minDelay)) +
+          Math.ceil(portal.minDelay)
+      );
+      console.log("Delay Dulu " + delay);
+      await portal.page.waitForTimeout(delay);
+    } catch (error) {
+      console.log("Gagal addDelay");
     }
   },
 };

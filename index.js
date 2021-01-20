@@ -11,6 +11,7 @@ const db = require("./db.json");
     await portal.login(user.username, user.password);
     await portal.clickDataKehadiran();
     await portal.clickPresensiOnline();
+    await portal.addDelay();
     await portal.clickAbsen();
     await portal.takeScreenShot(user.username);
     await portal.logout();
