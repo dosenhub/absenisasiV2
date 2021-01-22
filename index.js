@@ -6,6 +6,7 @@ const db = require("./db.json");
 
 (async () => {
   const { users } = db;
+  await portal.shuffle(users);
   await portal.init();
   for (const user of users) {
     await portal.login(user.username, user.password);

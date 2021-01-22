@@ -165,5 +165,13 @@ const portal = {
       console.log("Gagal addDelay");
     }
   },
+  shuffle: async (users) => {
+    for (let i = users.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * i);
+      const temp = users[i];
+      users[i] = users[j];
+      users[j] = temp;
+    }
+  },
 };
 module.exports = portal;

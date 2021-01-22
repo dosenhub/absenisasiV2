@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dosenhub/absenisasiV2#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "fisher-yates-shuffle": "^0.2.0",
     "fs-extra": "^9.0.1",
     "moment": "^2.29.0",
     "puppeteer": "^5.5.0",
