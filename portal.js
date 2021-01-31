@@ -4,7 +4,8 @@ const BASE_URL = "https://portal.polinema.ac.id";
 const moment = require("moment");
 const yn = require("yn");
 const { max } = require("moment");
-
+const { Telegraf } = require("telegraf");
+const bot = new Telegraf(process.env.BOT_TOKEN);
 const portal = {
   browser: null,
   page: null,
@@ -99,7 +100,7 @@ const portal = {
       console.log(error.stack);
     }
   },
-  clickAbsen: async () => {
+  clickAbsen: async (username) => {
     try {
       console.log("Start Klik Absen");
       await portal.page.waitForTimeout(3000);
@@ -108,14 +109,23 @@ const portal = {
       );
       if (buttonAbsen != undefined) {
         console.log("Click Button");
+        bot.telegram.sendMessage(
+          process.env.GROUP_ID,
+          "Absensi Atas Nama : " + username + " Sukses Dilakukan"
+        );
         await buttonAbsen.click();
         await portal.page.waitForTimeout(9000);
       } else {
-        console.log("Ga Di Klik Button");
+        bot.telegram.sendMessage(
+          process.env.GROUP_ID,
+          "Absensi Atas Nama : " + username + " Sudah Absen"
+        );
       }
     } catch (error) {
-      console.log("Gagal Klik Absen");
-      console.log(error.stack);
+      bot.telegram.sendMessage(
+        process.env.GROUP_ID,
+        "Absensi Atas Nama : " + username + " Gagal Dilakukan Absen"
+      );
     }
   },
   takeScreenShot: async (username) => {

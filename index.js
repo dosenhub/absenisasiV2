@@ -13,7 +13,7 @@ const db = require("./db.json");
     await portal.clickDataKehadiran();
     await portal.clickPresensiOnline();
     await portal.addDelay();
-    await portal.clickAbsen();
+    await portal.clickAbsen(user.username);
     await portal.takeScreenShot(user.username);
     await portal.logout();
   }
