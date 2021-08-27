@@ -20,9 +20,12 @@ const portal = {
         product: process.env.PUPPETEER_PRODUCT || "chrome",
         headless: yn(process.env.HEADLESS),
         defaultViewport: null,
+        ignoreHTTPSErrors: true,
+        acceptInsecureCerts: true,
         args: [
           "--no-sandbox",
           "--disable-setuid-sandbox",
+          "--ignore-certificate-errors",
           // "--start-fullscreen",
         ],
       });
