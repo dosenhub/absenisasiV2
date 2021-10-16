@@ -31,4 +31,5 @@ Bot Absen !!! thats it
 HEADLESS=false
 MAX=240000
 MIN=60000
+BOT_TELEGRAM=TOKEN HERE
 ```
